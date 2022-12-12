@@ -5,6 +5,7 @@ import gulp from 'gulp';
 import GulpPostCss from 'gulp-postcss';
 import pug from 'gulp-pug';
 import gulpSass from 'gulp-sass';
+import gulpSassGlob from 'gulp-sass-glob';
 import dartSass from 'sass';
 
 const { dest, series, src, watch } = gulp;
@@ -25,7 +26,8 @@ function html() {
 
 // Compile sass files into CSS
 function styles() {
-  return src("src/sass/*.{scss,sass}")
+  return src("src/sass/**/*.{scss,sass}")
+    .pipe(gulpSassGlob())
     .pipe(
       sass({
         includePaths: ["src/sass"],
@@ -69,5 +71,5 @@ function watchAndServe() {
   watch("dist/*.html").on("change", browserSync.reload);
 }
 
-export const build = series(cleandist, html, styles, assets);
-export default series(html, styles, assets, watchAndServe);
+export const build = series(cleandist, html, styles, assets, js);
+export default series(html, styles, assets, js, watchAndServe);
