@@ -19,5 +19,8 @@
   "author": "",
   "license": "ISC",
   "description": "",
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "gulp-sass-glob": "^1.1.0"
+  }
 }
