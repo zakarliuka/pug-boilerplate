@@ -3,10 +3,5 @@
 
 @import "_reset.scss";
 @import "_config.scss";
-// @import "parts/**/*";
-
-.button {
-  padding: 12px;
-  background: #000;
-  color: #fff;
-}
+@import "_media.scss";
+@import "parts/**/*";

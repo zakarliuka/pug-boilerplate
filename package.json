@@ -1,5 +1,5 @@
 {
-  "name": "gulpboilerplate",
+  "name": "gulp-pug-boilerplate",
   "version": "1.0.0",
   "scripts": {
     "start": "gulp"
@@ -14,9 +14,10 @@
     "gulp-pug": "^5.0.0",
     "gulp-sass": "^5.1.0",
     "postcss": "^8.4.19",
-    "sass": "^1.56.2"
+    "sass": "^1.56.2",
+    "gulp-sass-glob": "^1.1.0"
   },
-  "author": "",
+  "author": "Artem Zakarliuka",
   "license": "ISC",
   "description": "",
   "type": "module",
