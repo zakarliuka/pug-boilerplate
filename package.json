@@ -18,7 +18,7 @@
     "gulp-sass-glob": "^1.1.0"
   },
   "author": "Artem Zakarliuka",
-  "license": "ISC",
+  "license": "MIT",
   "description": "",
   "type": "module",
   "dependencies": {
