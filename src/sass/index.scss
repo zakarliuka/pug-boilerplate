@@ -5,3 +5,12 @@
 @import "_config.scss";
 @import "_media.scss";
 @import "parts/**/*";
+
+a,
+a:visited {
+  color: inherit;
+}
+
+html {
+  color: var(--color);
+}
