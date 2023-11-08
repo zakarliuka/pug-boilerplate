@@ -2,7 +2,8 @@
   "name": "gulp-pug-boilerplate",
   "version": "1.0.0",
   "scripts": {
-    "start": "gulp"
+    "start": "gulp",
+    "build": "gulp build"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
